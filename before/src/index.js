@@ -6,14 +6,8 @@ import App from "./components/App";
 import "./index.css";
 import configureStore from "./redux/configureStore";
 import { Provider as ReduxProvider } from "react-redux";
-const intialState = {
-   course: [{
-        title: "mohan"
-      },{
-        title: "ram"
-      }]
-}
-const store = configureStore(intialState);
+
+const store = configureStore();
 
 render(
   <ReduxProvider store={store}>
